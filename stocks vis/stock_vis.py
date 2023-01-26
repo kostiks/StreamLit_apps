@@ -17,7 +17,7 @@ st.write("""
 """)
 
 
-ticker_list = pd.read_csv ('/Users/margaritagordon/projects/streamlit/stocks vis/data/stock_symbols.txt')
+ticker_list = pd.read_csv ('./data/stock_symbols.txt')
 ticker_Symbol = st.selectbox('Компания', ticker_list)
 start_date = st.date_input('Начало', datetime.date(2019, 1, 1))
 end_date = st.date_input('Конец', datetime.date(2022,12,31))
